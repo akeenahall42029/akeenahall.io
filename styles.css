@@ -88,10 +88,11 @@ nav a:active{
       z-index: 1000;
       padding: 1rem 0;
       font-family: "Caprasimo", serif;
+      gap: 2rem;
     }
-    .logo{
+    /* .logo{
         font-size: 2.5rem;
-    }
+    } */
     nav.active {
       display: flex; /* Show when active */
     }
