@@ -43,6 +43,7 @@ header{
     color: white; 
     font-weight: 800; 
     cursor: pointer; 
+    font-family: "Caprasimo", serif;
     /* transition: 0.5s ease; */ 
 }
 nav{
