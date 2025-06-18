@@ -207,13 +207,13 @@ span{
 
 .typing_text span::after{
     content: "";
-    background-color: #7A5A43;
+    /* background-color: #7A5A43; */
     position:absolute; 
     width: calc(100% + 8px);
     height: 100%; 
     border-left: 3px solid black; 
     right: -8px; 
-    animation: cursor 0.6s infinite;
+    animation: cursor 0.6s infinite, typing 20s infinite;
 }
 
 @keyframes typing {
