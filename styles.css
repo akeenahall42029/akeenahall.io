@@ -47,7 +47,7 @@ header{
 }
 
 nav a{
-    font-size: 1.8 rem; 
+    font-size: 3.8rem; 
     color: white; 
     margin-left:  4rem;
     font-weight: 500;
@@ -57,39 +57,46 @@ nav a{
 }
 nav a:hover, 
 nav a:active{
-    color: #7A5A43; 
+    color: white; 
     border-bottom: 3px solid #F2ECE5; 
 }
 
-@media(max-width:995px){
-    nav{
-        position:absolute;
-        top:100%; 
-        right:0; 
-        width:40%; 
-        border-left: 3px solid #F2ECE5;
-        border-bottom: 3px solid #F2ECE5;
-        border-bottom-left-radius: 2rem;
-        padding: 1rem solid; 
-        background-color: #7A5A43;
-        border-top: 0.1rem solid #7A5A43; 
+@media (max-width: 995px) {
+    nav {
+      position: fixed; /* Fix it at the top */
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #7A5A43;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-bottom: 3px solid #F2ECE5;
+      z-index: 1000;
+      padding: 1rem 0;
+      display: none; /* Hide by default */
     }
-   nav.active{
-    display: block;
-   }
-   nav a{
-    display: block;
-    font-size: 2rem;
-    margin: 3rem 0; 
-   }
-   nav a:hover, 
-   nav a.active{
-    padding: 1rem; 
-    border-radius: 0.5rem;
-    border-bottom: 0.5rem solid #F2ECE5;
-
-   }
-}
+  
+    nav.active {
+      display: flex; /* Show when active */
+    }
+  
+    nav a {
+      display: block;
+      font-size: 1.5rem;
+      margin: 1rem 0;
+      color: #F2ECE5;
+      text-decoration: none;
+    }
+  
+    nav a:hover,
+    nav a.active {
+      padding: 0.5rem 1rem;
+      background-color: #B58E5C;
+      border-radius: 0.5rem;
+    }
+  }
+  
 section{
     min-height: 100vh;
     padding: 5rem 9% 5rem;
@@ -122,7 +129,6 @@ span{
 
 .home_img{
     border-radius:50%; 
-
 }
 .home_img img{
     position:relative;
