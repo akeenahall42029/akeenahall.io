@@ -45,9 +45,15 @@ header{
     cursor: pointer; 
     /* transition: 0.5s ease; */ 
 }
-
+nav{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    gap: 2rem;
+}
 nav a{
-    font-size: 3.8rem; 
+    font-size: 2.8rem; 
     color: white; 
     margin-left:  4rem;
     font-weight: 500;
