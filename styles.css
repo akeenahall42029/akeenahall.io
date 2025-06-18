@@ -156,6 +156,7 @@ span{
 .home_img img{
     position:relative;
     width: 40vw;
+    /* might change the height*/
     border-radius: 50%;
     box-shadow: 0 0 25px solid #F2ECE5;
     transition: 0.2s linear;
@@ -177,7 +178,7 @@ span{
     margin: 3rem 1.5rem 3rem 0; 
     transition: 0.3s ease;
     color:white;
-    size:2.0rem; 
+    size:3.0rem; 
 }
 
 .social_icons a:hover{
@@ -187,3 +188,63 @@ span{
     box-shadow: 0 0 25px #F2ECE5;
 }
 
+.typing_text{
+    font-size:34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typing_text span{
+    position: relative;
+
+}
+
+.typing_text span::before{
+    content: "";
+    color:#D6BFAF; 
+    animation: words 20s infinite;   
+}
+
+.typing_text span::after{
+    content: "";
+    background-color: #7A5A43;
+    position:absolute; 
+    width: calc(100% + 8px);
+    height: 100%; 
+    border-left: 3px solid black; 
+    right: -8px; 
+    animation: cursor 0.6s infinite;
+}
+
+@keyframes typing {
+    0%, 10%, 15%, 20%, 30%, 35%, 40%, 50%, 55%, 60%, 70%, 75%, 80%, 90%, 95%, 100% {
+        width: 0;
+    }
+    5%, 25%, 45%, 65%, 85% {
+        width: calc(100% + 8px);
+    }
+}
+
+@keyframes cursor{
+    to{
+        border-left: 3px solid;
+    }
+}
+
+@keyframes words{
+    0%, 20%{
+        content: "Backend Developer";
+    }
+    21%, 40%{
+        content: "Software Developer"
+    }
+    41%, 60%{
+        content: "Researcher";
+    }
+    60%, 80%{
+        content: "Jetsetter"
+    }
+    81%, 100%{
+        content: "Content Creator"
+    }
+}
