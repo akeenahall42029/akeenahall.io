@@ -54,7 +54,8 @@ nav{
 }
 .header_bar{
     background-color: #7A5A43;
-    height: 25%;
+    height: 10%;
+    padding-top:0;
     width: 100%; 
 
 }
