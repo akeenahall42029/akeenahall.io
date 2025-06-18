@@ -24,7 +24,6 @@ body{
 }
 
 header{
-    margin-top: 20px;
     position: fixed;
     top:0; 
     left:0; 
@@ -54,7 +53,7 @@ nav{
 }
 .header_bar{
     background-color: #7A5A43;
-    height: 10%;
+    height: 5%;
     padding-top:0;
     width: 100%; 
 
