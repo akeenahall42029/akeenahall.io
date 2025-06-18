@@ -196,12 +196,13 @@ span{
 
 .typing_text span{
     position: relative;
+    color: #F2ECE5;
 
 }
 
 .typing_text span::before{
     content: "";
-    color:#D6BFAF; 
+    color:#7A5A43; 
     animation: words 20s infinite;   
 }
 
