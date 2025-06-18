@@ -20,7 +20,7 @@ body{
     height:100vh;
     overflow-x: hidden;
     background-color: white;
-    /* color: #7A5A43;  */
+    color: #F2ECE5; 
 }
 
 header{
@@ -55,6 +55,7 @@ nav{
 .header_bar{
     background-color: #7A5A43;
     height: 25%;
+    width: 100%; 
 
 }
 nav a{
