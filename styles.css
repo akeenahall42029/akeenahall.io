@@ -54,7 +54,7 @@ nav{
 }
 .header_bar{
     background-color: #7A5A43;
-    width: 25%;
+    height: 25%;
 
 }
 nav a{
@@ -139,6 +139,7 @@ span{
     font-size: 4rem; 
     margin-bottom: 1rem;
     font-weight: 700;
+    color: #F2ECE5;
 }
 
 .home_img{
