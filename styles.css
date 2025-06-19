@@ -46,11 +46,12 @@ header{
 }
 nav{
     display: flex; 
-    flex-wrap:wrap;
+    /* flex-wrap:wrap; */
     font-family: "Caprasimo", serif;
-    position: fixed; 
+    align-items: center; 
+    /* position: fixed; 
     float: right; 
-    justify-content: center;
+    justify-content: center; */
 }
 .header_bar{
     background-color: #7A5A43;
@@ -92,15 +93,17 @@ nav a:active{
       display: flex;
       align-items: center;
       z-index: 1000;
-      padding: 0 1rem ;
+      padding: 0 1rem;
       font-family: "Caprasimo", serif;
       gap: 2rem;
       position: fixed;
     }
     .logo{
         font-size: 2.5rem;
-        float: left;
-        padding-left: 10px;
+        /* float: left; */
+        /* padding-left: 10px; */
+        align-self: flex-start;
+        margin-bottom: 1rem;
     } 
     nav.active {
       display: flex; /* Show when active */
@@ -136,6 +139,14 @@ section{
     
 }
 
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem; 
+    background-color: #D6BFAF;
+    
+}
 .home .home-content h1{
     font-size: 5rem; 
     font-weight: 700;
@@ -200,10 +211,7 @@ span{
 
 .typing_text span{
     position: relative;
-    color: #F2ECE5;
-
-}
-
-.typed_words{
     color:#7A5A43; 
 }
+
+
