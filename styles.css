@@ -78,14 +78,24 @@ nav a:active{
 }
 
 @media (max-width: 995px) {
-    .header_bar{
+    /* .header_bar{
         padding: 1rem 0;
         flex-direction: column;
         gap: 1rem;
+    } */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem 2rem;
+        background-color: #7A5A43;
     }
     nav {
-      position: fixed; /* Fix it at the top */
-      top: 0;
+        width: 100%;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+      /* position: fixed; /* Fix it at the top */
+      /* top: 0;
       left: 0;
       justify-content: center;
       width: 100%;
@@ -96,8 +106,8 @@ nav a:active{
       padding: 0 1rem;
       font-family: "Caprasimo", serif;
       gap: 2rem;
-      position: fixed;
-    }
+      position: fixed; */
+    } */
     .logo{
         font-size: 2.5rem;
         /* float: left; */
