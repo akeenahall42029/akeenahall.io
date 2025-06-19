@@ -89,7 +89,6 @@ nav a:active{
       background-color: #7A5A43;
       display: flex;
       align-items: center;
-      border-bottom: 3px solid #F2ECE5;
       z-index: 1000;
       padding: 0 1rem ;
       font-family: "Caprasimo", serif;
